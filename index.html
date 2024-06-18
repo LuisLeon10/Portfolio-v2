@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+    <section class="portfolio">
+      <section class="aside-info">
+        <div class="perfil-photo">
+          <div class="perfil-photo-img">
+            <img src="assets/images/perfil-photo.jpg" alt="">
+          </div>
+        </div>
+        <div class="personal-data">
+          <div class="personal-data-name">
+            <h2>Luis Ángel Calvillo León</h2>
+          </div>
+          <div class="personal-data-rol">
+            <p>Web Developer</p>
+          </div>
+        </div>
+        <div class="personal-info">
+          <div class="personal-info-item">
+            <div class="personal-info-item-icon">
+              <div>
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="personal-info-item-data">
+              <p class="personal-info-item-data-title">CORREO</p>
+              <a href="mailto:luiscalvillo.leon21@gmail.com" class="personal-info-item-data-content">luiscalvillo.leon21@...</a>
+            </div>
+          </div>
+          <div class="personal-info-item">
+            <div class="personal-info-item-icon">
+              <div>
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="personal-info-item-data">
+              <p class="personal-info-item-data-title">TELÉFONO</p>
+              <a href="tel:+524773726416" class="personal-info-item-data-content">+52 (477) 372 64 16</a>
+            </div>
+          </div>
+          <div class="personal-info-item">
+            <div class="personal-info-item-icon">
+              <div>
+                <ion-icon name="accessibility-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="personal-info-item-data">
+              <p class="personal-info-item-data-title">FECHA DE NACIMIENTO</p>
+              <p class="personal-info-item-data-content">16 de Febrero de 2002</p>
+            </div>
+          </div>
+          <div class="personal-info-item">
+            <div class="personal-info-item-icon">
+              <div>
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="personal-info-item-data">
+              <p class="personal-info-item-data-title">DIRECCIÓN</p>
+              <p class="personal-info-item-data-content">Márquez Sur, 521, Chapalita, León, Gto.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-info">
+        <nav class="navbar">
+          <ul>
+            <li><a href="#" class="navlink" onclick="watchContent('section1')">Sobre mí</a></li>
+            <li><a href="#" class="navlink" onclick="watchContent('section2')">Resumen</a></li>
+            <li><a href="#" class="navlink" onclick="watchContent('section3')">Portfolio</a></li>
+            <li><a href="#" class="navlink" onclick="watchContent('section4')">Enlaces</a></li>
+          </ul>
+        </nav>
+        <!--Acerca de mi-->
+        <div class="about-me sections" id="section1">
+          <div class="about-me-description">
+            <h2>Sobre mí</h2>
+            <hr>
+            <p>Egresado de la carrera en ingeniería con conocimientos y habilidades fullstack en desarrollo de aplicaciones web completas y diseño con sólidos conocimientos en HTML, CSS y JavaScript, así como en frameworks de Frontend y Backend como es Angular y Django, orientado a seguir aprendiendo y tomando las mejores practicas en el desarrollo web.
+            </p>
+          </div>
+          <div class="about-me-knowledge">
+            <h3>Conocimientos</h3>
+            <hr>
+            <div class="knowledge-container">
+              <div class="knowledge-item">
+                <div class="knowledge-item-icon">
+                  <ion-icon name="logo-html5"></ion-icon>
+                </div>
+                <div class="knowledge-item-content">
+                  <h4>HTML</h4>
+                  <p>Conocimiento sólido de HTML para crear y diseñar la estructura de páginas web.</p>
+                </div>
+              </div>
+              <div class="knowledge-item">
+                <div class="knowledge-item-icon">
+                  <ion-icon name="logo-css3"></ion-icon>
+                </div>
+                <div class="knowledge-item-content">
+                  <h4>CSS</h4>
+                  <p>Habilidad para convertir una página web en un diseño atractivo y llamativo.</p>
+                </div>
+              </div>
+              <div class="knowledge-item">
+                <div class="knowledge-item-icon">
+                  <ion-icon name="logo-javascript"></ion-icon>
+                </div>
+                <div class="knowledge-item-content">
+                  <h4>Javascript, Typescript</h4>
+                  <p>Implementación de funcionalidad para darle el motor a la página web.</p>
+                </div>
+              </div>
+              <div class="knowledge-item">
+                <div class="knowledge-item-icon">
+                  <ion-icon name="logo-angular"></ion-icon>
+                </div>
+                <div class="knowledge-item-content">
+                  <h4>Angular</h4>
+                  <p>Creación de sitios web dinámicos y escalables del lado del cliente.</p>
+                </div>
+              </div>
+              <div class="knowledge-item">
+                <div class="knowledge-item-icon">
+                  <ion-icon name="laptop-outline"></ion-icon>
+                </div>
+                <div class="knowledge-item-content">
+                  <h4>Boostrap</h4>
+                  <p>Integración del framework de diseño para facilitación del diseño de las interfaces y responsividad.</p>
+                </div>
+              </div>
+              <div class="knowledge-item">
+                <div class="knowledge-item-icon">
+                  <ion-icon name="logo-python"></ion-icon>
+                </div>
+                <div class="knowledge-item-content">
+                  <h4>Python, Django</h4>
+                  <p>Integración de la lógica de negocios, seguridad y tratamiento de la información del lado del servidor.</p>
+                </div>
+              </div>
+              <div class="knowledge-item">
+                <div class="knowledge-item-icon">
+                  <ion-icon name="file-tray-stacked-outline"></ion-icon>
+                </div>
+                <div class="knowledge-item-content">
+                  <h4>MySQL, SQLServer</h4>
+                  <p>Manejo de motores de base de datos relacionales para el almacenamiento de la información.</p>
+                </div>
+              </div>
+              <div class="knowledge-item">
+                <div class="knowledge-item-icon">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+                <div class="knowledge-item-content">
+                  <h4>C#</h4>
+                  <p>Conocimientos sobre el lenguaje aplicado a .NET o videojuegos como Unity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resumen -->
+        <div class="resume sections" id="section2">
+          <div class="resume-content">
+            <h2>Resumen</h2>
+            <hr>
+            <div class="timeline">
+              <div class="timeline-title">
+                <div class="timeline-title-icon">
+                  <ion-icon name="book-outline"></ion-icon>
+                </div>
+                <h3>Educación</h3>
+              </div>
+              <div class="timeline-list">
+                <div class="timeline-item">
+                  <h4>Ingeniería en Entornos Virtuales y Negocios Digitales</h4>
+                  <span>2022 - 2024</span>
+                  <p>Universidad Tecnológica de León</p>
+                </div>
+                <div class="timeline-item">
+                  <h4>TSU en Entornos Virtuales y Negocios Digitales</h4>
+                  <span>2020 - 2022</span>
+                  <p>Universidad Tecnológica de León</p>
+                </div>
+                <div class="timeline-item">
+                  <h4>PTB en Informática</h4>
+                  <span>2017 - 2020</span>
+                  <p>Conalep León II</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="timeline">
+              <div class="timeline-title">
+                <div class="timeline-title-icon">
+                  <ion-icon name="newspaper-outline"></ion-icon>
+                </div>
+                <h3>Experiencia Laboral</h3>
+              </div>
+              <div class="timeline-list">
+                <div class="timeline-item">
+                  <h4>Web Developer</h4>
+                  <span>Enero 2024 - Junio 2024</span>
+                  <p>Aktien TI</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lista de proyectos - Portfolio -->
+        <div class="projects sections" id="section3">
+          <div class="projects-content">
+            <h2>Proyectos</h2>
+            <hr>
+            <div class="projects-list">
+              <div class="project-item">
+                <img src="assets/images/Proyecto-1.PNG" alt="Projecto 1">
+                <div class="project-item-effect">
+                  <a href="https://luisleon10.github.io/Pagina-UTL/">
+                    <div>
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="project-item">
+                <img src="assets/images/Proyecto-2.PNG" alt="Projecto 2">
+                <div class="project-item-effect">
+                  <a href="https://luisleon10.github.io/AppClima/">
+                    <div>
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="project-item">
+                <img src="assets/images/Proyecto-3.PNG" alt="Projecto 3">
+                <div class="project-item-effect">
+                  <a href="https://luisleon10.github.io/notes/">
+                    <div>
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="project-item">
+                <img src="assets/images/Proyecto-4.PNG" alt="Projecto 4">
+                <div class="project-item-effect">
+                  <a href="https://luisleon10.github.io/tarjetas/">
+                    <div>
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enlaces externos -->
+        <div class="external-links sections" id="section4">
+          <div class="external-links-content">
+            <h2>Enlaces Externos</h2>
+            <hr>
+            <div class="external-links-items">
+              <div class="external-links-item">
+                <a href="https://github.com/LuisLeon10" target="_blank">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </div>
+              <div class="external-links-item">
+                <a href="https://wa.me/+524773726416" target="_blank">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </div>
+              <div class="external-links-item">
+                <a href="mailto:luiscalvillo.leon21@gmail.com" target="_blank">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+              </div>
+              <div class="external-links-item">
+                <a href="tel:+524773726416" target="_blank">
+                  <ion-icon name="call-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+  <!--
+    Scripts para iconos  
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
