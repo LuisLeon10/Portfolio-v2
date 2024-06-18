@@ -14,6 +14,9 @@
   box-sizing: border-box;
   font-family: Poppins;
 }
+body{
+  background: var(--background);
+}
 hr{
   color: var(--border-div);
   width: 60px;
@@ -40,16 +43,18 @@ span{
 }
 .portfolio{
   width: 100%;
-  min-height: 100vh;
-  padding: 50px 4.5rem;
-  background: var(--background);
+  min-height: auto;
+  padding: 50px 300px; /* 4.5 */
   display: flex;
 }
 
 /* Barra lateral */
+.aside-info-mobile{
+  display: none;
+}
 .aside-info{
   width: 25%;
-  max-height: 640px;
+  max-height: 670px;
   border: 1px solid var(--border-div);
   border-radius: 20px;
   margin-right: 20px;
@@ -79,7 +84,6 @@ span{
   border-bottom: 1px solid var(--border-div);
 }
 .personal-data-name{
-  text-align: center;
   color: var(--general-text);
   margin: 0 auto;
 }
@@ -390,4 +394,206 @@ span{
 .external-links-item a ion-icon{
   font-size: 60px;
   color: var(--general-text);
+}
+
+
+
+/* Laptop Responsivo*/
+@media (max-width: 1366px) {
+  .portfolio{
+    padding: 50px 4.5rem;
+  }
+  .aside-info-mobile{
+    display: none;
+  }
+}
+@media (max-width: 1024px){
+  .portfolio{
+    display: block;
+  }
+  .main-info{
+    width: 100%;
+  }
+  .aside-info{
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .aside-info-mobile{
+    display: none;
+  }
+  .perfil-photo{
+    width: 20%;
+    margin: 0;
+  }
+  .perfil-photo-img{
+    width: 100px;
+    height: 100px;
+  }
+  .personal-data{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    border: none;
+    padding: 0 0 0 10px;
+  }
+  .personal-data-rol{
+    margin: 0;
+  }
+  .personal-data-name{
+    margin: 0;
+  }
+  .personal-info{
+    display: block;
+    width: 25%;
+    margin-left: 100px;
+  }
+  .responsive-off{
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  h2{
+    font-size: 28px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  h4{
+    font-size: 16px;
+  }
+  .aside-info-mobile{
+    display: none;
+  }
+  .personal-data-name h2{
+    text-align: left;
+  }
+  .personal-info{
+    display: block;
+    width: 40%;
+    margin-left: 0;
+  }
+  .knowledge-container{
+    gap: 10px;
+  }
+  .knowledge-item-icon{
+    width: 15%;
+    display: grid;
+    place-items: center;
+  }
+  .knowledge-item-icon ion-icon{
+    font-size: 40px;
+  }
+  .knowledge-item-content{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .knowledge-item-content h4{
+    margin-left: 20px;
+  }
+  .knowledge-item-content p{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  .projects-list{
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+@media (max-width: 520px){
+  .portfolio{
+    padding: 50px 2rem 100px 2rem;
+  }
+  .navbar{
+    height: 70px;
+  }
+  .navbar ul{
+    padding: 0;
+  }
+  .aside-info{
+    display: none;
+  }
+  .aside-info-mobile{
+    padding: 20px 0;
+    background-color: var(--background-container);
+    border-radius: 20px;
+    border: 1px solid var(--border-div);
+    margin-bottom: 30px;
+    display: block;
+  }
+  .aside-info-mobile .accordion-body{
+    padding: 30px 0 10px 0;
+  }
+  .perfil-photo{
+    width: 30%;
+  }
+  .perfil-photo-img{
+    width: 70px;
+    height: 70px;
+  }
+  .personal-data{
+    width: 70%;
+  }
+  .personal-data-name h2{
+    font-size: 18px;
+  }
+  .personal-data-rol{
+    padding: 2px 5px;
+    border-radius: 10px;
+  }
+  .personal-data-rol p{
+    font-size: 14px;
+    margin: 0;
+  }
+  .personal-data ion-icon{
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    font-size: 20px;
+    color: var(--general-text);
+  }
+  .personal-info{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .personal-info-item{
+    width: 100%;
+  }
+  .personal-info-item-data p, .personal-info-item-data a{
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .about-me, .resume, .projects, .external-links{
+    padding: 20px;
+  }
+  .navbar{
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-radius: 0;
+    z-index: 100;
+  }
+  .knowledge-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projects-list{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .external-links-item{
+    width: 30px;
+    height: 30px;
+  }
+  .external-links-item a ion-icon{
+    font-size: 40px;
+  }
 }
