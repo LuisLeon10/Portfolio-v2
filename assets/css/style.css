@@ -191,6 +191,19 @@ span {
 .navbar ul li a.active {
 	color: var(--secondary-text);
 }
+.sections {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(10px);
+	transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.sections.active {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+	transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+}
 
 /* Sobre mí */
 .about-me {
