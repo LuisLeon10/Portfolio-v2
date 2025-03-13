@@ -56,7 +56,7 @@ span {
 }
 .aside-info {
 	width: 25%;
-	max-height: 670px;
+	max-height: 570px;
 	border: 1px solid var(--border-div);
 	border-radius: 20px;
 	margin-right: 20px;
